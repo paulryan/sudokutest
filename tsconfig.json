@@ -1,14 +1,14 @@
 {
-    "files": [
-        "src/ts/SudokuCell.ts",
-        "src/ts/SudokuGrid.ts",
-        "src/ts/SudokuRenderer.ts",
-        "src/ts/app.ts",
-        "typings/modules/react/index.d.ts",
-        "typings/modules/react-dom/index.d.ts"
-    ],
+    // "files": [
+    //     "src/ts/SudokuCell.ts",
+    //     "src/ts/SudokuGrid.ts",
+    //     "src/ts/SudokuRenderer.ts",
+    //     "src/ts/app.ts",
+    //     "typings/modules/react/index.d.ts",
+    //     "typings/modules/react-dom/index.d.ts"
+    // ],
     "compilerOptions": {
-        "noImplicitAny": false,
+        "noImplicitAny": true,
         "target": "es5",
         "jsx": "react",
         "module": "commonjs",

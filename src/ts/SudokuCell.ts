@@ -27,7 +27,7 @@
         return this.values;
     }
 
-    public getOnlyPossibleValueElseNull() {
+    public getOnlyValueElseNull() {
         let onlyPossibleValue = <number>null;
         if (this.values.length === 1) {
             onlyPossibleValue = this.values[0];

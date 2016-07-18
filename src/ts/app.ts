@@ -1,17 +1,21 @@
 ﻿/// <reference path="./SudokuGrid.ts" />
-/// <reference path="./SudokuRenderer.ts" />
+/// <reference path="./ReactRenderer.tsx" />
 
 import { SudokuGrid } from "./SudokuGrid";
-import { SudokuRenderer } from "./SudokuRenderer";
+import { RenderGrid } from "./ReactRenderer";
 
 window.onload = () => {
-    const sudokuGrid = new SudokuGrid(9);
-    const sudokuRenderer = new SudokuRenderer(sudokuGrid);
-
-    sudokuGrid.setCellValue(1, 1, 1);
-    sudokuGrid.setCellValue(1, 2, 2);
-    sudokuGrid.setCellValue(9, 9, 9);
+    const isCascade = false;
+    const sudokuGrid = new SudokuGrid(9, isCascade);
+    //const sudokuRenderer = new SudokuRenderer(sudokuGrid);
 
     const el = document.getElementById("content");
-    sudokuRenderer.renderGrid(el);
+
+    // Do logic to build initial state of sudoku grid
+    // sudokuGrid.setCellValue(1, 1, 1);
+    // sudokuGrid.setCellValue(1, 2, 2);
+    // sudokuGrid.setCellValue(9, 9, 9);
+
+    // Render grid. The rendered grid will handle further interations
+    RenderGrid(el, sudokuGrid);
 };
