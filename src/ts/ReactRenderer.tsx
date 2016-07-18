@@ -34,7 +34,7 @@ class GridCellReact extends React.Component<ISudokuGridCell, {}> {
                 this.props.gridCell.getColIndex(),
                 cellVal
             );
-            if(!isAllowedMove) {
+            if (!isAllowedMove) {
                 alert("Illegal move!");
             }
         }

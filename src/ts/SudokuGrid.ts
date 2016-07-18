@@ -2,8 +2,6 @@
 
 import { SudokuCell } from "./SudokuCell";
 
-
-
 export class SudokuGrid {
     private isCascade: boolean;
     private gridSideLength: number;
@@ -20,11 +18,11 @@ export class SudokuGrid {
         this.sqSideLength = Math.sqrt(this.gridSideLength);
 
         this.cells = [];
-        if  (cells){
-            //this.cells = cells;
-             for (let i = 0; cells.hasOwnProperty(i.toString()); i++) {
-                 this.cells.push(cells[i]);
-             }
+        if (cells) {
+            // this.cells = cells;
+            for (let i = 0; cells.hasOwnProperty(i.toString()); i++) {
+                this.cells.push(cells[i]);
+            }
         } else {
             this.initGrid();
         }

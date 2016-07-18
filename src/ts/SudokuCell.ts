@@ -2,7 +2,7 @@
     private rowIndex: number;
     private colIndex: number;
     private sqIndex: number;
-    private values: Array<number>
+    private values: number[];
 
     constructor(row: number, col: number, sq: number, values: Array<number>) {
         this.rowIndex = row;
