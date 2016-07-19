@@ -1,4 +1,6 @@
-﻿
+﻿/// <reference path="../../typings/globals/react/index.d.ts" />
+/// <reference path="../../typings/globals/react-dom/index.d.ts" />
+
 /// <reference path="./SudokuGrid.ts" />
 /// <reference path="./SudokuCell.ts" />
 

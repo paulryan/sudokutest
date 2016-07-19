@@ -2,10 +2,10 @@
     // "files": [
     //     "src/ts/SudokuCell.ts",
     //     "src/ts/SudokuGrid.ts",
-    //     "src/ts/SudokuRenderer.ts",
+    //     "src/ts/ReactRenderer.ts",
     //     "src/ts/app.ts",
-    //     "typings/modules/react/index.d.ts",
-    //     "typings/modules/react-dom/index.d.ts"
+    //     "typings/globals/react/index.d.ts",
+    //     "typings/globals/react-dom/index.d.ts"
     // ],
     "compilerOptions": {
         "noImplicitAny": true,
